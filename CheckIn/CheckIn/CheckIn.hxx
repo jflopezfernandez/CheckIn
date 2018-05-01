@@ -8,8 +8,12 @@
 #define CHECK_API __declspec(dllimport)
 #endif
 
+#include <iostream>
+
 namespace Check {
 	CHECK_API bool TestConnection() noexcept;
+
+	CHECK_API int returnInteger();
 }
 
 #endif // CHECK_IN_CHECK_IN_HXX_
